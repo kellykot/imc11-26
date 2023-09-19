@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CálculoIMC</title>
-    <linkrel="tylesheet" href=""style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class=""corpo"> <br><br><br><br><br>
-      h1 class="título">CAUCULAR IMC DE:</h1>
+      <h1 class="título">CAUCULAR IMC DE:</h1>
       <p class="texto-imc">
 
     <!--Fazendo o Script-->
-            <sctipt>
-                 function caucular(peso, altura){
+            <script>
+                 function calcular(peso, altura){
                        return peso / (altura**2);
                  }
                  alert("CLIQUE EM OK PARA COMEÇAR");
@@ -20,7 +20,7 @@
                 let nome = prompt("Qual seu nome?");
                 let peso = prompt(nome + ",qual o seu peso?");
                 let altura = prompt(nome + "qual a sua altura?");
-                let calculo = caucular(peso, altura);
+                let calculo = calcular(peso, altura);
                 let texto = ", seu IMC é: ."
     //colocando duas casas decmais 
                 let imc = calculo.toFixed(2)
@@ -28,7 +28,7 @@
                 document.write(nome.italics() + texto.bold() + imc.fontcolor("blue"));
                 
                 
-            </sctipt>
+            </script>
     <!--termino do Script Java-->
         </p>
 </body>
@@ -37,4 +37,4 @@
 
 
 
-.
+
